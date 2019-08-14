@@ -26,7 +26,7 @@ WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Username_txtPassword
 
 WebUI.click(findTestObject('Page_OrangeHRM/input_Password_Submit'))
 
-WebUI.verifyTextPresent('Welcome Admin 123', false, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyTextPresent('Welcome Admin', false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_OrangeHRM/a_Welcome Admin'))
 
@@ -39,6 +39,8 @@ WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/b_Performance'))
 WebUI.click(findTestObject('Page_OrangeHRM/b_Dashboard'))
 
 WebUI.click(findTestObject('Page_OrangeHRM/a_Welcome Admin'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_OrangeHRM/a_Logout'))
 
