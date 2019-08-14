@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoint>
+   <description></description>
+   <name>CheckpointOne</name>
+   <tag></tag>
+   <source-info>
+      <is-from-test-data>true</is-from-test-data>
+      <source-url>Data Files/DataOne</source-url>
+   </source-info>
+   <taken-date>2019-08-14T19:45:47.647</taken-date>
+   <column-names>
+      <column-name>username</column-name>
+      <column-name>password</column-name>
+   </column-names>
+   <checkpoint-data><![CDATA[[
+  [
+    {
+      "value": "John Doe",
+      "checked": true
+    },
+    {
+      "value": "g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "ABCD",
+      "checked": true
+    },
+    {
+      "value": "g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM",
+      "checked": false
+    }
+  ]
+]]]></checkpoint-data>
+</checkpoint>

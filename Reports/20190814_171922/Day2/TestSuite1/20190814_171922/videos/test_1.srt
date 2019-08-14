@@ -1,0 +1,72 @@
+1
+00:00:00,284 --> 00:00:00,290
+1. openBrowser("")
+
+2
+00:00:03,954 --> 00:00:03,957
+5. navigateToUrl("https://katalon-demo-cura.herokuapp.com/")
+
+3
+00:00:04,413 --> 00:00:04,414
+9. click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment"))
+
+4
+00:00:05,247 --> 00:00:05,248
+13. setText(findTestObject("Page_CURA Healthcare Service/input_Username_username"), "John Doe")
+
+5
+00:00:05,631 --> 00:00:05,632
+17. setEncryptedText(findTestObject("Page_CURA Healthcare Service/input_Password_password"), "g3/DOGG74jCHprihoBCU630WT95Zgs/x")
+
+6
+00:00:06,009 --> 00:00:06,010
+21. click(findTestObject("Page_CURA Healthcare Service/button_Login"))
+
+7
+00:00:06,479 --> 00:00:06,480
+25. setText(findTestObject("Page_CURA Healthcare Service/input_Username_username"), "John Doe")
+
+8
+00:00:06,753 --> 00:00:06,755
+29. setEncryptedText(findTestObject("Page_CURA Healthcare Service/input_Password_password"), "g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM")
+
+9
+00:00:06,998 --> 00:00:06,999
+33. click(findTestObject("Page_CURA Healthcare Service/button_Login"))
+
+10
+00:00:07,211 --> 00:00:07,211
+37. selectOptionByValue(findTestObject("Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA"), "Hongkong CURA Healthcare Center", true)
+
+11
+00:00:07,798 --> 00:00:07,798
+41. click(findTestObject("Page_CURA Healthcare Service/input_Apply for hospital readmission_hospital_readmission"))
+
+12
+00:00:08,055 --> 00:00:08,056
+45. click(findTestObject("Page_CURA Healthcare Service/input_Medicaid_programs"))
+
+13
+00:00:08,219 --> 00:00:08,221
+49. click(findTestObject("Page_CURA Healthcare Service/span_Visit Date (Required)_glyphicon glyphicon-calendar"))
+
+14
+00:00:08,424 --> 00:00:08,425
+53. click(findTestObject("Page_CURA Healthcare Service/td_21"))
+
+15
+00:00:08,575 --> 00:00:08,577
+57. setText(findTestObject("Page_CURA Healthcare Service/textarea_Comment_comment"), "test comments")
+
+16
+00:00:08,800 --> 00:00:08,801
+61. click(findTestObject("Page_CURA Healthcare Service/button_Book Appointment"))
+
+17
+00:00:09,063 --> 00:00:09,064
+65. click(findTestObject("Page_CURA Healthcare Service/a_Go to Homepage"))
+
+18
+00:00:09,369 --> 00:00:09,375
+69. closeBrowser()
+

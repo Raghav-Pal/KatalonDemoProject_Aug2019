@@ -1,0 +1,25 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": false,
+      "proposedXPath": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027CURA Healthcare Service\u0027])[3]/preceding::input[1]",
+      "testObjectId": "Object Repository/Page_CURA Healthcare Service/input_Password_password",
+      "brokenXPath": "//input[@id\u003d\u0027txt-password\u0027]",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": false,
+      "proposedXPath": "//input[@id\u003d\u0027txt-username\u0027]",
+      "testObjectId": "Object Repository/Page_CURA Healthcare Service/input_Username_username",
+      "brokenXPath": "//input[@id\u003d\u0027txt-username1\u0027]",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": false,
+      "proposedXPath": "//input",
+      "testObjectId": "Object Repository/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospital_readmission",
+      "brokenXPath": "//input[@id\u003d\u0027chk_hospotal_readmission\u0027]",
+      "pathToScreenshot": ""
+    }
+  ]
+}

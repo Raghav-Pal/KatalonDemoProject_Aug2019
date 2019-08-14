@@ -1,0 +1,9 @@
+{
+  "brokenTestObjects" : [ {
+    "approved" : true,
+    "proposedXPath" : "//section[@id='login']/div/div/div[2]/form/div[2]/div/input",
+    "testObjectId" : "Object Repository/NewObjectsForKatalonDemo/Page_CURA Healthcare Service/input_Username_username",
+    "brokenXPath" : "//input[@id='txt-username1']",
+    "pathToScreenshot" : ""
+  } ]
+}
