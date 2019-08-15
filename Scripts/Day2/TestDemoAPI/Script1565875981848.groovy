@@ -12,25 +12,20 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Demo/ListUsers'))
 
-WebUI.selectOptionByValue(findTestObject('WEB/Page_CURA Healthcare Service/select_Tokyo'), 'Seoul CURA Healthcare Center', true)
+def slurper = new groovy.json.JsonSlurper()
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospital_readmission'))
+def result = slurper.parseText(response.getResponseBodyContent())
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Medicaid_programs'))
+def value = result.data[1].first_name
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/div_Visit Date (Required)_input-group-addon'))
+println('  ..  value is : ' + value)
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/td_20'))
+GlobalVariable.USER = value
 
-WebUI.setText(findTestObject('WEB/Page_CURA Healthcare Service/textarea_Comment_comment'), 'abcd')
+println('  GlobalVariable.USER : ' + GlobalVariable.USER)
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/button_Book Appointment'))
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/a_Go to Homepage'))
-
-WebUI.closeBrowser()
+WS.sendRequestAndVerify(findTestObject('Demo/UpdateUser', [('user') : GlobalVariable.USER]))
 

@@ -18,31 +18,31 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/index.php/auth/login')
 
-WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/span_Username'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/span_Username'))
 
-WebUI.setText(findTestObject('Page_OrangeHRM/input_LOGIN Panel_txtUsername'), 'Admin')
+WebUI.setText(findTestObject('WEB/Page_OrangeHRM/input_LOGIN Panel_txtUsername'), 'Admin')
 
-WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Username_txtPassword'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+WebUI.setEncryptedText(findTestObject('WEB/Page_OrangeHRM/input_Username_txtPassword'), 'hUKwJTbofgPU9eVlw/CnDQ==')
 
-WebUI.click(findTestObject('Page_OrangeHRM/input_Password_Submit'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/input_Password_Submit'))
 
 WebUI.verifyTextPresent('Welcome Admin', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_OrangeHRM/a_Welcome Admin'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Welcome Admin'))
 
-WebUI.click(findTestObject('Page_OrangeHRM/b_Recruitment'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Recruitment'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/b_Leave'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Leave'))
 
-WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/b_Performance'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Performance'))
 
-WebUI.click(findTestObject('Page_OrangeHRM/b_Dashboard'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Dashboard'))
 
-WebUI.click(findTestObject('Page_OrangeHRM/a_Welcome Admin'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Welcome Admin'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_OrangeHRM/a_Logout'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Logout'))
 
 WebUI.closeBrowser()
 

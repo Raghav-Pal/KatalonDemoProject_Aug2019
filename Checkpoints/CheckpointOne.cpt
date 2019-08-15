@@ -7,7 +7,7 @@
       <is-from-test-data>true</is-from-test-data>
       <source-url>Data Files/DataOne</source-url>
    </source-info>
-   <taken-date>2019-08-14T19:45:47.647</taken-date>
+   <taken-date>2019-08-15T17:11:23.563</taken-date>
    <column-names>
       <column-name>username</column-name>
       <column-name>password</column-name>
@@ -16,7 +16,7 @@
   [
     {
       "value": "John Doe",
-      "checked": true
+      "checked": false
     },
     {
       "value": "g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM",
@@ -25,8 +25,8 @@
   ],
   [
     {
-      "value": "ABCD",
-      "checked": true
+      "value": "A123",
+      "checked": false
     },
     {
       "value": "g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM",

@@ -14,23 +14,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.selectOptionByValue(findTestObject('WEB/Page_CURA Healthcare Service/select_Tokyo'), 'Seoul CURA Healthcare Center', true)
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/')
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospital_readmission'))
+WebUI.setText(findTestObject('WEB/Page_OrangeHRM/input_LOGIN Panel_txtUsername'), 'Admin')
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Medicaid_programs'))
+WebUI.setEncryptedText(findTestObject('WEB/Page_OrangeHRM/input_Username_txtPassword'), 'hUKwJTbofgPU9eVlw/CnDQ==')
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/div_Visit Date (Required)_input-group-addon'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/input_Password_Submit'))
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/td_20'))
+not_run: WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Logout'))
 
-WebUI.setText(findTestObject('WEB/Page_CURA Healthcare Service/textarea_Comment_comment'), 'abcd')
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Dashboard'))
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/button_Book Appointment'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Welcome Admin'))
 
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/a_Go to Homepage'))
+not_run: WebUI.waitForElementPresent(findTestObject('WEB/Page_OrangeHRM/a_Logout'), 5)
+
+WebUI.waitForElementPresent(findTestObject('WEB/Page_OrangeHRM/a_Logout'), 5)
+
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/a_Logout'))
 
 WebUI.closeBrowser()
 

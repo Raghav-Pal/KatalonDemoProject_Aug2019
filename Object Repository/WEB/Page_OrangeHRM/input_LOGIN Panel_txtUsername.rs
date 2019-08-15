@@ -10,12 +10,11 @@
          <value>//*[@id = 'txtUsername']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='txtUsername']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='txtUsername']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

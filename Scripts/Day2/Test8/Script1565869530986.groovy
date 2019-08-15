@@ -12,25 +12,4 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.selectOptionByValue(findTestObject('WEB/Page_CURA Healthcare Service/select_Tokyo'), 'Seoul CURA Healthcare Center', true)
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospital_readmission'))
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/input_Medicaid_programs'))
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/div_Visit Date (Required)_input-group-addon'))
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/td_20'))
-
-WebUI.setText(findTestObject('WEB/Page_CURA Healthcare Service/textarea_Comment_comment'), 'abcd')
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/button_Book Appointment'))
-
-WebUI.click(findTestObject('WEB/Page_CURA Healthcare Service/a_Go to Homepage'))
-
-WebUI.closeBrowser()
 

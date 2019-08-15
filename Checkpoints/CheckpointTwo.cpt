@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoint>
+   <description></description>
+   <name>CheckpointTwo</name>
+   <tag></tag>
+   <db-source-info>
+      <is-from-test-data>false</is-from-test-data>
+      <source-url></source-url>
+      <source-type>DBData</source-type>
+      <is-using-global-db-setting>false</is-using-global-db-setting>
+      <is-secure-user-account>false</is-secure-user-account>
+      <query><![CDATA[]]></query>
+   </db-source-info>
+   <checkpoint-data><![CDATA[null]]></checkpoint-data>
+</checkpoint>
